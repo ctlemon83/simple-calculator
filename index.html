@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="calculator">
+		<div id="display">
+			<h1 id="displayValue">0</h1>
+		</div>
+		<div id="input">
+			<div id="digits">
+				<button class="calcButton digButton" data-value="1" id="num1" type="number" value="1">1</button>
+				<button class="calcButton digButton" id="num2" type="button">2</button>
+				<button class="calcButton digButton" id="num3" type="button">3</button>
+				<button class="calcButton digButton" id="num4" type="button">4</button>
+				<button class="calcButton digButton" id="num5" type="button">5</button>
+				<button class="calcButton digButton" id="num6" type="button">6</button>
+				<button class="calcButton digButton" id="num7" type="button">7</button>
+				<button class="calcButton digButton" id="num8" type="button">8</button>
+				<button class="calcButton digButton" id="num9" type="button">9</button>
+				<button class="calcButton funcButton" type="button" onclick="location.reload();">C</button>
+				<button class="calcButton digButton" id="num0" type="button">0</button>
+				<button class="calcButton funcButton" id="equals" type="button">=</button>
+			</div>
+			<div id="functions">
+				<button class="calcButton funcButton" id="plus" type="button">+</button>
+				<button class="calcButton funcButton" id="minus" type="button">-</button>
+				<button class="calcButton funcButton" id="multiply" type="button">x</button>
+				<button class="calcButton funcButton" id="divide" type="button">/</button>
+			</div>
+		</div>
+	</div>
+	<script class="calcButton" type="text/javascript" src="script.js"></script>
+</body>
+</html>
