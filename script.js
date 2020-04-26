@@ -33,16 +33,32 @@
 	num1.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 1;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 1;
 		}
 		display.innerHTML = 1;
 	});
 
+	// num1.addEventListener('click', function() {
+	// 	if(var1 === '') {
+	// 		var1 = 1;
+	// 		display.innerHTML = 1;
+	// 	} else if(var1 !== '' && operator === '') {
+	// 		var1 = var1 + '1';
+	// 		display.innerHTML = var1;
+	// 	} else if(var1 !== '' && operator !== '') {
+	// 		var2 = 1;
+	// 		display.innerHTML = 1;
+	// 	} else if(var1 !== '' && operator !== '' && var2 !== '') {
+	// 		var2 = var2 + '1'
+	// 		display.innerHTML = var2;
+	// 	}
+	// });
+
 	num2.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 2;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 2;
 		}
 		display.innerHTML = 2;
@@ -51,7 +67,7 @@
 	num3.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 3;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 3;
 		}
 		display.innerHTML = 3;
@@ -60,7 +76,7 @@
 	num4.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 4;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 4;
 		}
 		display.innerHTML = 4;
@@ -69,7 +85,7 @@
 	num5.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 5;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 5;
 		}
 		display.innerHTML = 5;
@@ -78,7 +94,7 @@
 	num6.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 6;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 6;
 		}
 		display.innerHTML = 6;
@@ -87,7 +103,7 @@
 	num7.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 7;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 7;
 		}
 		display.innerHTML = 7;
@@ -96,7 +112,7 @@
 	num8.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 8;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 8;
 		}
 		display.innerHTML = 8;
@@ -105,7 +121,7 @@
 	num9.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 9;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 9;
 		}
 		display.innerHTML = 9;
@@ -114,7 +130,7 @@
 	num0.addEventListener('click', function() {
 		if(var1 === '') {
 			var1 = 0;
-		} else {
+		} else if(var1 !== '' && operator !== '') {
 			var2 = 0;
 		}
 		display.innerHTML = 0;
