@@ -162,4 +162,7 @@
 			result = 0;
 		}
 		display.innerHTML = result;
+		var1 = '';
+		var2 = '';
+		operator = '';
 	});
