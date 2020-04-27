@@ -14,6 +14,7 @@
 	var multiply = document.getElementById('multiply');
 	var divide = document.getElementById('divide');
 	var equals = document.getElementById('equals');
+	var clear = document.getElementById('clear');
 	var display = document.getElementById('displayValue');
 
 // Expression Storing Variables
@@ -37,11 +38,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '1');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 1;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '1');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 1;
 			display.innerHTML = var2;
 		}
 	});
@@ -53,11 +54,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '2');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 2;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '2');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 2;
 			display.innerHTML = var2;
 		}
 	});
@@ -69,11 +70,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '3');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 3;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '3');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 3;
 			display.innerHTML = var2;
 		}
 	});
@@ -85,11 +86,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '4');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 4;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '4');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 4;
 			display.innerHTML = var2;
 		}
 	});
@@ -101,11 +102,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '5');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 5;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '5');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 5;
 			display.innerHTML = var2;
 		}
 	});
@@ -117,11 +118,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '6');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 6;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '6');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 6;
 			display.innerHTML = var2;
 		}
 	});
@@ -133,11 +134,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '7');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 7;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '7');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 7;
 			display.innerHTML = var2;
 		}
 	});
@@ -149,11 +150,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '8');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 8;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '8');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 8;
 			display.innerHTML = var2;
 		}
 	});
@@ -165,11 +166,11 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '9');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 9;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '9');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 9;
 			display.innerHTML = var2;
 		}
 	});
@@ -181,16 +182,23 @@
 		} else if(var1 !== '' && operator === '') {
 			var1 = Number(var1 + '0');
 			display.innerHTML = var1;
-		} else if(var1 !== '' && operator !== '') {
-			var2 = 0;
-			display.innerHTML = var2;
 		} else if(var1 !== '' && operator !== '' && var2 !== '') {
 			var2 = Number(var2 + '0');
+			display.innerHTML = var2;
+		} else if(var1 !== '' && operator !== '') {
+			var2 = 0;
 			display.innerHTML = var2;
 		}
 	});
 
 // Operator Event Listeners
+	clear.addEventListener('click', function() {
+		var1 = '';
+		var2 = '';
+		operator = '';
+		display.innerHTML = '0';
+	});
+
 	plus.addEventListener('click', function() {
 		if(operator === '') {
 			operator = 'plus';
