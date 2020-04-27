@@ -240,7 +240,7 @@
 			result = 0;
 		}
 		display.innerHTML = result;
-		var1 = '';
+		var1 = result;
 		var2 = '';
 		operator = '';
 	});
